@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Motswana IMS - Support</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="navbar">
+    <img src="pics/digital_mo-removebg-preview.png" alt="Digital Motswana IMS Logo">
+  </div>
+
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+  <div class="container">
+    <aside class="sidebar" id="sidebar">
+      <h3>Navigation</h3>
+      <a href="index.html"><span class="icon">🏠</span>Home</a>
+      <a href="documents.html"><span class="icon">📄</span>My Documents</a>
+      <a href="verification.html"><span class="icon">✅</span>Verification</a>
+      <a href="announcements.html"><span class="icon">📢</span>Announcements</a>
+      <a href="support.html" class="active"><span class="icon">📞</span>Support</a>
+      <a href="#"><span class="icon">🔒</span>Log Out</a>
+    </aside>
+
+    <main class="main">
+      <div class="content-area">
+        <div class="support-header">
+          <h2>Support Center</h2>
+          <div class="support-search">
+            <input type="text" placeholder="Search for help topics..." class="search-input">
+            <button class="search-btn">Search</button>
+          </div>
+        </div>
+
+        <div class="support-content">
+          <div class="support-sections">
+            <div class="support-section">
+              <h3>Quick Help</h3>
+              <div class="help-cards">
+                <div class="help-card">
+                  <span class="icon">📱</span>
+                  <h4>QR Code Issues</h4>
+                  <p>Troubleshoot QR code generation and scanning</p>
+                  <button class="action-btn">View Guide</button>
+                </div>
+                <div class="help-card">
+                  <span class="icon">🔐</span>
+                  <h4>Account Access</h4>
+                  <p>Reset password or recover account</p>
+                  <button class="action-btn">Get Help</button>
+                </div>
+                <div class="help-card">
+                  <span class="icon">📄</span>
+                  <h4>Document Upload</h4>
+                  <p>Learn about supported formats and size limits</p>
+                  <button class="action-btn">Read More</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-section">
+              <h3>Contact Support</h3>
+              <form class="support-form">
+                <div class="form-group">
+                  <label for="category">Issue Category</label>
+                  <select id="category" required>
+                    <option value="">Select Category</option>
+                    <option value="technical">Technical Issue</option>
+                    <option value="account">Account Related</option>
+                    <option value="documents">Document Processing</option>
+                    <option value="verification">Verification Problems</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <input type="text" id="subject" required placeholder="Brief description of your issue">
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" required rows="5" placeholder="Describe your issue in detail"></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="attachment">Attachment (Optional)</label>
+                  <input type="file" id="attachment">
+                </div>
+                <button type="submit" class="primary-btn">Submit Ticket</button>
+              </form>
+            </div>
+
+            <div class="contact-info">
+              <h3>Other Ways to Reach Us</h3>
+              <div class="contact-methods">
+                <div class="contact-method">
+                  <span class="icon">📞</span>
+                  <div class="method-details">
+                    <h4>Phone Support</h4>
+                    <p>+267 3XX XXXX</p>
+                    <p>Monday - Friday, 8AM - 5PM</p>
+                  </div>
+                </div>
+                <div class="contact-method">
+                  <span class="icon">📧</span>
+                  <div class="method-details">
+                    <h4>Email Support</h4>
+                    <p>support@digitalmotswana.gov.bw</p>
+                    <p>Response within 24 hours</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

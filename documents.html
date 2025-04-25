@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Motswana IMS - My Documents</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="navbar">
+    <img src="pics/digital_mo-removebg-preview.png" alt="Digital Motswana IMS Logo">
+  </div>
+
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+  <div class="container">
+    <aside class="sidebar" id="sidebar">
+      <h3>Navigation</h3>
+      <a href="index.html"><span class="icon">🏠</span>Home</a>
+      <a href="documents.html" class="active"><span class="icon">📄</span>My Documents</a>
+      <a href="verification.html"><span class="icon">✅</span>Verification</a>
+      <a href="announcements.html"><span class="icon">📢</span>Announcements</a>
+      <a href="support.html"><span class="icon">📞</span>Support</a>
+      <a href="#"><span class="icon">🔒</span>Log Out</a>
+    </aside>
+
+    <main class="main">
+      <div class="content-area">
+        <div class="documents-header">
+          <h2>My Documents</h2>
+          <button class="primary-btn"><span class="icon">➕</span>Upload New Document</button>
+        </div>
+
+        <div class="documents-grid">
+          <div class="document-card">
+            <div class="document-icon">📘</div>
+            <div class="document-info">
+              <h3>National ID</h3>
+              <p class="doc-details">Uploaded: 24/04/2025</p>
+              <p class="status verified">Verified ✓</p>
+            </div>
+            <div class="document-actions">
+              <button class="action-btn"><span class="icon">👁️</span>View</button>
+              <button class="action-btn"><span class="icon">🔄</span>Update</button>
+              <button class="action-btn"><span class="icon">📱</span>QR Code</button>
+            </div>
+          </div>
+
+          <div class="document-card">
+            <div class="document-icon">🛂</div>
+            <div class="document-info">
+              <h3>Passport</h3>
+              <p class="doc-details">Uploaded: 20/04/2025</p>
+              <p class="status verified">Verified ✓</p>
+            </div>
+            <div class="document-actions">
+              <button class="action-btn"><span class="icon">👁️</span>View</button>
+              <button class="action-btn"><span class="icon">🔄</span>Update</button>
+              <button class="action-btn"><span class="icon">📱</span>QR Code</button>
+            </div>
+          </div>
+
+          <div class="document-card">
+            <div class="document-icon">🚗</div>
+            <div class="document-info">
+              <h3>Driver's License</h3>
+              <p class="doc-details">Uploaded: 22/04/2025</p>
+              <p class="status pending">Pending Verification</p>
+            </div>
+            <div class="document-actions">
+              <button class="action-btn"><span class="icon">👁️</span>View</button>
+              <button class="action-btn"><span class="icon">🔄</span>Update</button>
+              <button class="action-btn"><span class="icon">📱</span>QR Code</button>
+            </div>
+          </div>
+
+          <div class="document-card">
+            <div class="document-icon">🎓</div>
+            <div class="document-info">
+              <h3>Certificates</h3>
+              <p class="doc-details">Last Updated: 23/04/2025</p>
+              <p class="status verified">Verified ✓</p>
+            </div>
+            <div class="document-actions">
+              <button class="action-btn"><span class="icon">👁️</span>View</button>
+              <button class="action-btn"><span class="icon">🔄</span>Update</button>
+              <button class="action-btn"><span class="icon">📱</span>QR Code</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

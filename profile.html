@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Motswana IMS - Profile</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/profile.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="navbar">
+    <img src="pics/digital_mo-removebg-preview.png" alt="Digital Motswana IMS Logo">
+  </div>
+
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+  <div class="container">
+    <aside class="sidebar" id="sidebar">
+      <h3>Navigation</h3>
+      <a href="index.html"><span class="icon">🏠</span>Home</a>
+      <a href="profile.html" class="active"><span class="icon">👤</span>Profile</a>
+      <a href="documents.html"><span class="icon">📄</span>My Documents</a>
+      <a href="verification.html"><span class="icon">✅</span>Verification</a>
+      <a href="announcements.html"><span class="icon">📢</span>Announcements</a>
+      <a href="support.html"><span class="icon">📞</span>Support</a>
+      <a href="logout.html"><span class="icon">🔒</span>Log Out</a>
+    </aside>
+
+    <main class="main">
+      <div class="profile-container">
+        <div class="profile-header">
+          <div class="profile-cover">
+            <div class="profile-avatar-container">
+              <img src="images/default-avatar.png" alt="Profile Picture" class="profile-avatar">
+              <button class="edit-avatar-btn">
+                <span class="icon">📷</span>
+              </button>
+            </div>
+          </div>
+          <div class="profile-actions">
+            <button class="edit-profile-btn">
+              <span class="icon">✏️</span> Edit Profile
+            </button>
+            <button class="security-btn">
+              <span class="icon">🔐</span> Security Settings
+            </button>
+          </div>
+        </div>
+
+        <div class="profile-sections">
+          <div class="profile-section personal-info animate-in">
+            <h2>Personal Information</h2>
+            <div class="info-grid">
+              <div class="info-item">
+                <label>Full Name</label>
+                <p>Mpho Kgosi</p>
+              </div>
+              <div class="info-item">
+                <label>Date of Birth</label>
+                <p>15/03/1992</p>
+              </div>
+              <div class="info-item">
+                <label>National ID</label>
+                <p>BW9876543210</p>
+              </div>
+              <div class="info-item">
+                <label>Gender</label>
+                <p>Female</p>
+              </div>
+              <div class="info-item">
+                <label>Marital Status</label>
+                <p>Single</p>
+              </div>
+              <div class="info-item">
+                <label>Nationality</label>
+                <p>Motswana</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="profile-section contact-info animate-in">
+            <h2>Contact Information</h2>
+            <div class="info-grid">
+              <div class="info-item">
+                <label>Primary Email</label>
+                <p>mpho.kgosi@gmail.com</p>
+                <span class="verified-badge">Verified ✓</span>
+              </div>
+              <div class="info-item">
+                <label>Phone Number</label>
+                <p>+267 71234567</p>
+                <span class="verified-badge">Verified ✓</span>
+              </div>
+              <div class="info-item">
+                <label>Physical Address</label>
+                <p>Plot 123, Phase 2</p>
+                <p>Gaborone, Botswana</p>
+              </div>
+              <div class="info-item">
+                <label>Postal Address</label>
+                <p>P.O. Box 1234</p>
+                <p>Gaborone, Botswana</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="profile-section biometric-info animate-in">
+            <h2>Biometric Information</h2>
+            <div class="biometric-grid">
+              <div class="biometric-item">
+                <span class="icon">👆</span>
+                <h3>Fingerprint</h3>
+                <p class="status registered">Registered</p>
+                <button class="update-btn">Update</button>
+              </div>
+              <div class="biometric-item">
+                <span class="icon">👁️</span>
+                <h3>Facial Recognition</h3>
+                <p class="status registered">Registered</p>
+                <button class="update-btn">Update</button>
+              </div>
+              <div class="biometric-item">
+                <span class="icon">✍️</span>
+                <h3>Digital Signature</h3>
+                <p class="status pending">Not Registered</p>
+                <button class="register-btn">Register</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="profile-section security-settings animate-in">
+            <h2>Security Settings</h2>
+            <div class="security-grid">
+              <div class="security-item">
+                <div class="security-header">
+                  <h3>Two-Factor Authentication</h3>
+                  <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider"></span>
+                  </label>
+                </div>
+                <p>Enhance your account security with 2FA</p>
+              </div>
+              <div class="security-item">
+                <div class="security-header">
+                  <h3>Login Notifications</h3>
+                  <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider"></span>
+                  </label>
+                </div>
+                <p>Get notified of new login attempts</p>
+              </div>
+              <div class="security-item">
+                <div class="security-header">
+                  <h3>Document Access Logs</h3>
+                  <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                  </label>
+                </div>
+                <p>Track who views your documents</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/profile.js"></script>
+</body>
+</html>

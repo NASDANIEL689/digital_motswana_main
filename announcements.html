@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Motswana IMS - Announcements</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="navbar">
+    <img src="pics/digital_mo-removebg-preview.png" alt="Digital Motswana IMS Logo">
+  </div>
+
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+  <div class="container">
+    <aside class="sidebar" id="sidebar">
+      <h3>Navigation</h3>
+      <a href="index.html"><span class="icon">🏠</span>Home</a>
+      <a href="documents.html"><span class="icon">📄</span>My Documents</a>
+      <a href="verification.html"><span class="icon">✅</span>Verification</a>
+      <a href="announcements.html" class="active"><span class="icon">📢</span>Announcements</a>
+      <a href="support.html"><span class="icon">📞</span>Support</a>
+      <a href="#"><span class="icon">🔒</span>Log Out</a>
+    </aside>
+
+    <main class="main">
+      <div class="content-area">
+        <div class="announcements-header">
+          <h2>Announcements</h2>
+          <div class="filter-controls">
+            <select class="announcement-filter">
+              <option value="all">All Announcements</option>
+              <option value="system">System Updates</option>
+              <option value="maintenance">Maintenance</option>
+              <option value="news">News</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="announcements-list">
+          <div class="announcement-card important">
+            <div class="announcement-icon">🔔</div>
+            <div class="announcement-content">
+              <div class="announcement-meta">
+                <span class="announcement-date">25 April 2025</span>
+                <span class="announcement-tag">System Update</span>
+              </div>
+              <h3>New Biometric Features Added</h3>
+              <p>We've added fingerprint and facial recognition support for enhanced security. Update your profile to enable these features.</p>
+              <button class="action-btn">Learn More</button>
+            </div>
+          </div>
+
+          <div class="announcement-card">
+            <div class="announcement-icon">🛠️</div>
+            <div class="announcement-content">
+              <div class="announcement-meta">
+                <span class="announcement-date">24 April 2025</span>
+                <span class="announcement-tag">Maintenance</span>
+              </div>
+              <h3>Scheduled Maintenance</h3>
+              <p>System maintenance scheduled for 26 April, 02:00 - 04:00 AM. Some services may be temporarily unavailable.</p>
+              <button class="action-btn">View Details</button>
+            </div>
+          </div>
+
+          <div class="announcement-card">
+            <div class="announcement-icon">📰</div>
+            <div class="announcement-content">
+              <div class="announcement-meta">
+                <span class="announcement-date">23 April 2025</span>
+                <span class="announcement-tag">News</span>
+              </div>
+              <h3>Digital ID Now Accepted at All Banks</h3>
+              <p>All major banks in Botswana now accept Digital Motswana IMS verification for account services.</p>
+              <button class="action-btn">Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

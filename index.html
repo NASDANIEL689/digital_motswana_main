@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Motswana IMS - Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="navbar">
+    <img src="pics/digital_mo-removebg-preview.png" alt="Digital Motswana IMS Logo">
+  </div>
+
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+  <div class="container">
+    <aside class="sidebar" id="sidebar">
+      <h3>Navigation</h3>
+      <a href="index.html" class="active"><span class="icon">🏠</span>Home</a>
+      <a href="profile.html"><span class="icon">👤</span>Profile</a>
+      <a href="documents.html"><span class="icon">📄</span>My Documents</a>
+      <a href="verification.html"><span class="icon">✅</span>Verification</a>
+      <a href="announcements.html"><span class="icon">📢</span>Announcements</a>
+      <a href="support.html"><span class="icon">📞</span>Support</a>
+      <a href="logout.html"><span class="icon">🔒</span>Log Out</a>
+    </aside>
+
+    <main class="main">
+      <div class="content-area">
+        <div class="left-group">
+          <div class="user-info">
+            <div class="info-text">
+              <h3>Mpho Kgosi</h3>
+              <div class="info-grid">
+                <div><strong>Date of Birth:</strong> 15/03/1992</div>
+                <div><strong>ID Number:</strong> BW9876543210</div>
+                <div><strong>Status:</strong> <span class="verified">Verified ✓</span></div>
+                <div><strong>Last Updated:</strong> 24/04/2025</div>
+                <div><strong>Email:</strong> mpho.kgosi@gmail.com</div>
+                <div><strong>Phone:</strong> +267 71234567</div>
+              </div>
+            </div>
+            <img id="profile-pic" src="pics/WhatsApp Image 2025-04-25 at 15.01.52.jpeg" alt="Profile Picture">
+          </div>
+
+          <div class="box-row">
+            <div class="extra-box education">
+              <h3>Education</h3>
+              <p>BGCSE - 2019</p>
+              <p>Diploma: Computing - 2022</p>
+              <p>BSc Information Systems - Current</p>
+              <button class="add-more-btn"><span class="icon">➕</span>Add More</button>
+            </div>
+
+            <div class="extra-box clearance">
+              <h3>Police Clearance</h3>
+              <p>Status: <span class="verified">Clear ✓</span></p>
+              <p>Last Check: 20/01/2025</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-group">
+          <div class="live-data-card">
+            <h3>Stored Documents</h3>
+            <div class="document-list">
+              <div class="document-item">
+                <span class="icon">📘</span>
+                <span class="doc-name">National ID</span>
+                <span class="status verified">✓</span>
+              </div>
+              <div class="document-item">
+                <span class="icon">🛂</span>
+                <span class="doc-name">Passport</span>
+                <span class="status verified">✓</span>
+              </div>
+              <div class="document-item">
+                <span class="icon">🚗</span>
+                <span class="doc-name">Driver's License</span>
+                <span class="status pending">⏳</span>
+              </div>
+              <div class="document-item">
+                <span class="icon">🎓</span>
+                <span class="doc-name">Certificates</span>
+                <span class="status verified">✓</span>
+              </div>
+              <button class="add-more-btn documents-btn"><span class="icon">➕</span>Add More</button>
+            </div>
+          </div>
+
+          <div class="extra-box activity">
+            <h3>Recent Activity</h3>
+            <div class="activity-list">
+              <p>🔔 National ID verified on 24/04/2025</p>
+              <p>📝 New certificate added: Computing</p>
+              <p>🔄 Profile information updated</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

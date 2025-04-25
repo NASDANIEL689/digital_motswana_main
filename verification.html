@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Motswana IMS - Verification</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="navbar">
+    <img src="pics/digital_mo-removebg-preview.png" alt="Digital Motswana IMS Logo">
+  </div>
+
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+  <div class="container">
+    <aside class="sidebar" id="sidebar">
+      <h3>Navigation</h3>
+      <a href="index.html"><span class="icon">🏠</span>Home</a>
+      <a href="documents.html"><span class="icon">📄</span>My Documents</a>
+      <a href="verification.html" class="active"><span class="icon">✅</span>Verification</a>
+      <a href="announcements.html"><span class="icon">📢</span>Announcements</a>
+      <a href="support.html"><span class="icon">📞</span>Support</a>
+      <a href="#"><span class="icon">🔒</span>Log Out</a>
+    </aside>
+
+    <main class="main">
+      <div class="content-area">
+        <div class="verification-header">
+          <h2>Document Verification</h2>
+          <div class="verification-tabs">
+            <button class="tab-btn active">QR Code</button>
+            <button class="tab-btn">Facial Recognition</button>
+            <button class="tab-btn">Fingerprint</button>
+          </div>
+        </div>
+
+        <div class="verification-content">
+          <div class="qr-section active">
+            <div class="qr-container">
+              <div class="qr-preview">
+                <div class="qr-placeholder">
+                  <span class="icon">📱</span>
+                  <p>Your QR Code will appear here</p>
+                </div>
+              </div>
+              <div class="qr-controls">
+                <select class="document-select">
+                  <option value="">Select Document</option>
+                  <option value="national_id">National ID</option>
+                  <option value="passport">Passport</option>
+                  <option value="drivers_license">Driver's License</option>
+                  <option value="certificates">Certificates</option>
+                </select>
+                <button class="primary-btn">Generate QR Code</button>
+              </div>
+            </div>
+            <div class="verification-instructions">
+              <h3>How to Use QR Verification</h3>
+              <ol>
+                <li>Select the document you want to verify</li>
+                <li>Click "Generate QR Code"</li>
+                <li>Present the QR code to the verifying official</li>
+                <li>The official will scan using their DM-IMS app</li>
+                <li>Verification status will be updated automatically</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
