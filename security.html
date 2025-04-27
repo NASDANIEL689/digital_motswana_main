@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Motswana IMS - Security</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/profile.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="navbar">
+    <img src="pics/digital_mo-removebg-preview.png" alt="Digital Motswana IMS Logo">
+  </div>
+
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+  <div class="container">
+    <aside class="sidebar" id="sidebar">
+      <h3>Navigation</h3>
+      <a href="index.html"><span class="icon">🏠</span>Home</a>
+      <a href="profile.html"><span class="icon">👤</span>Profile</a>
+      <a href="documents.html"><span class="icon">📄</span>My Documents</a>
+      <a href="security.html" class="active"><span class="icon">🔐</span>Security</a>
+      <a href="verification.html"><span class="icon">✅</span>Verification</a>
+      <a href="announcements.html"><span class="icon">📢</span>Announcements</a>
+      <a href="support.html"><span class="icon">📞</span>Support</a>
+      <a href="logout.html"><span class="icon">🔒</span>Log Out</a>
+    </aside>
+
+    <main class="main">
+      <div class="content-area">
+        <div class="security-header">
+          <h2>Security Center</h2>
+          <button class="primary-btn">
+            <span class="icon">🔄</span> Update Security Settings
+          </button>
+        </div>
+
+        <div class="profile-sections">
+          <div class="profile-section security-settings animate-in">
+            <h2>Security Settings</h2>
+            <div class="security-grid">
+              <div class="security-item">
+                <div class="security-header">
+                  <h3>Two-Factor Authentication</h3>
+                  <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider"></span>
+                  </label>
+                </div>
+                <p>Enhance your account security with 2FA</p>
+                <button class="configure-btn">Configure 2FA</button>
+              </div>
+              <div class="security-item">
+                <div class="security-header">
+                  <h3>Login Notifications</h3>
+                  <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider"></span>
+                  </label>
+                </div>
+                <p>Get notified of new login attempts</p>
+                <button class="configure-btn">Manage Notifications</button>
+              </div>
+              <div class="security-item">
+                <div class="security-header">
+                  <h3>Document Access Logs</h3>
+                  <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                  </label>
+                </div>
+                <p>Track who views your documents</p>
+                <button class="configure-btn">View Access Logs</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="profile-section biometric-info animate-in">
+            <h2>Biometric Security</h2>
+            <div class="biometric-grid">
+              <div class="biometric-item">
+                <span class="icon">👆</span>
+                <h3>Fingerprint</h3>
+                <p class="status registered">Registered</p>
+                <div class="biometric-details">
+                  <p>Last Updated: 24/04/2025</p>
+                  <p>Devices: 2 registered</p>
+                </div>
+                <button class="update-btn">Manage Fingerprints</button>
+              </div>
+              <div class="biometric-item">
+                <span class="icon">👁️</span>
+                <h3>Facial Recognition</h3>
+                <p class="status registered">Registered</p>
+                <div class="biometric-details">
+                  <p>Last Updated: 24/04/2025</p>
+                  <p>Status: Active</p>
+                </div>
+                <button class="update-btn">Update Face ID</button>
+              </div>
+              <div class="biometric-item">
+                <span class="icon">✍️</span>
+                <h3>Digital Signature</h3>
+                <p class="status pending">Not Registered</p>
+                <div class="biometric-details">
+                  <p>Required for document signing</p>
+                  <p>Status: Pending setup</p>
+                </div>
+                <button class="register-btn">Setup Signature</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="profile-section password-section animate-in">
+            <h2>Password & Recovery</h2>
+            <div class="password-grid">
+              <div class="password-item">
+                <h3>Change Password</h3>
+                <p>Last changed: 1 month ago</p>
+                <button class="action-btn">Update Password</button>
+              </div>
+              <div class="password-item">
+                <h3>Recovery Email</h3>
+                <p>backup.email@gmail.com</p>
+                <button class="action-btn">Modify Recovery Email</button>
+              </div>
+              <div class="password-item">
+                <h3>Security Questions</h3>
+                <p>3 questions set</p>
+                <button class="action-btn">Update Questions</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="profile-section activity-log animate-in">
+            <h2>Recent Security Activity</h2>
+            <div class="activity-list">
+              <div class="activity-item">
+                <span class="icon">🔐</span>
+                <div class="activity-details">
+                  <h4>Successful login</h4>
+                  <p>Chrome on Windows • Gaborone, Botswana</p>
+                  <p class="activity-time">Today, 10:30 AM</p>
+                </div>
+              </div>
+              <div class="activity-item">
+                <span class="icon">👆</span>
+                <div class="activity-details">
+                  <h4>New fingerprint added</h4>
+                  <p>iPhone 14 Pro • Device registered</p>
+                  <p class="activity-time">Yesterday, 3:15 PM</p>
+                </div>
+              </div>
+              <div class="activity-item">
+                <span class="icon">🔄</span>
+                <div class="activity-details">
+                  <h4>Password changed</h4>
+                  <p>Security settings updated</p>
+                  <p class="activity-time">23/04/2025, 2:45 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/profile.js"></script>
+</body>
+</html>
